@@ -38,10 +38,10 @@ if (!mysqli_stmt_fetch($stmt)) {
 } else {
     mysqli_stmt_close($stmt);
     $stmt = mysqli_prepare($db, "UPDATE Users SET password=? WHERE id=?"); //Change the password
-    mysqli_stmt_bind_param($stmt, "si", password_hash("rougemont", PASSWORD_DEFAULT), $id);
+    mysqli_stmt_bind_param($stmt, "si", password_hash("test", PASSWORD_DEFAULT), $id);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    echo 'Password reset to "rougemont"';
+    echo 'Password reset to "test"';
 }
 
 mysqli_stmt_close($stmt);
