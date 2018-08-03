@@ -16,8 +16,8 @@ mysqli_stmt_bind_result($stmt, $adminid);
 if (!mysqli_stmt_fetch($stmt)) {
     mysqli_stmt_close($stmt);
     $stmt = mysqli_prepare($db, 'INSERT INTO Users (username,password) VALUES ("admin",?)');
-    $defaultPass = "rougemont";
-    mysqli_stmt_bind_param($stmt, "s", password_hash("rougemont", PASSWORD_DEFAULT)); //Default password, user will be prompted to change this on login.
+    $defaultPass = "test";
+    mysqli_stmt_bind_param($stmt, "s", password_hash("test", PASSWORD_DEFAULT)); //Default password, user will be prompted to change this on login.
     mysqli_stmt_execute($stmt);
 }
 mysqli_stmt_close($stmt);
