@@ -33,7 +33,7 @@ if (mysqli_stmt_fetch($stmt)) {
         echo "Logged in as " . $_SESSION["username"] . '.<br><br>';
         echo '<a href="index.php">Continue</a>';
 
-        if ($_POST["password"] == "rougemont") { //Password is set to the default
+        if ($_POST["password"] == "test") { //Password is set to the default
 
             echo '<br><br>You should change your password. <a href="change_password_form.php">Change Password</a>';
 
