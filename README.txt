@@ -4,7 +4,7 @@ The .php files contained within this folder should all be in the web server's do
 
 The web server should be set up to only use HTTPS, though for testing purposes ONLY it is not required
 
-The admin user for the website has username 'admin' and default password 'rougemont'.
+The admin user for the website has username 'admin' and default password 'test'.
 
 The MySQL server should have a user called ReservationUser and default password testPass (for testing purposes)
 which should be able to create, update, select, insert and delete.
